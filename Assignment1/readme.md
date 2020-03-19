@@ -9,7 +9,7 @@
 3) Use file names without any whitespaces. Proper indentation of the HTML code is required. Variable names should be in camel case. 
 4) All references must use <cite> attribute. (www.w3schools.com/TAgs/att_cite.asp) All content must be stored in your hosting site. 
 5) All HTML pages must contain search engine friendly HTML meta tags.( Check sample meta tags here: alphapeeler.sf.net ) 
-6)Exclude your CV page from search engines by using ROBOTS.TXT. (Instructions for ROBOTS.TXT:[www.robotstxt.org/robotstxt.html]).
+6)Exclude your CV page from search engines by using ROBOTS.TXT.(Instructions for ROBOTS.TXT:[www.robotstxt.org/robotstxt.html]).
 7)CV page must be password protected (use htaccess ). 
 
 **Don’t:**
