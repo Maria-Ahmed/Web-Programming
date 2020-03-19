@@ -14,8 +14,7 @@
 
 **Don’t:**
 1) Don’t use HTML Frames. Don’t use any styling attribute in elements.
-2) Don’t use any styling element in html file (e.g., <strong>, <em>, <font>, <center>. 
-3) All styling should go into CSS. Don’t’ absolute URLs for any resources and images. 
-4) Don’t use any Front-end frameworks such as Bootstrap. Don’t use any publicly available CSS files / or other people CSS files. 
-5) Don’t use JavaScript / jQuery. 
-6) Don’t use any web site generator.
+2) All styling should go into CSS. Don’t’ absolute URLs for any resources and images. 
+3) Don’t use any Front-end frameworks such as Bootstrap. Don’t use any publicly available CSS files / or other people CSS files. 
+4) Don’t use JavaScript / jQuery. 
+5) Don’t use any web site generator.
