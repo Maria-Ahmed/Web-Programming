@@ -1,0 +1,33 @@
+*
+{
+   
+    color: purple;
+    background-color: khaki;
+    
+}
+
+h1{
+    
+    text-decoration-color: grey;
+    text-underline-position: below;
+}
+
+p{
+    font-size: 15px;
+    text-align: center;
+    font-style: italic;
+    
+}
+.proofs
+{
+    width: 29px;
+    height: 30px;
+}
+
+img{
+    width: 1000px;
+    height: 500px;
+    text-align: center;
+    padding: 67px;
+}
+

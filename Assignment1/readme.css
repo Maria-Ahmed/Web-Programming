@@ -1,0 +1,40 @@
+nav{
+    left: 0;
+    top: 0;
+    position: absolute;
+    background: #1b242f;
+    border-bottom: 3px solid #04c2c9;
+    height: 50px;
+    text-align: left;
+    width: 100%;
+    z-index: 99;
+}
+nav a:hover{
+    color: #e31b6d;
+}
+.read-nav a{
+        cursor: pointer;
+        font-size: 12pt;
+        padding: 12px 20px;
+        text-transform: uppercase;
+        transition: color 0.5s;
+        color: white;
+        text-decoration: none;
+
+}
+.link-contain{
+    padding-top: 14px;
+    padding-left: 20%;
+
+}
+.head-1{
+    margin-top: 8%;
+}
+h1{
+    padding-left: 2%;
+    font-size: 40px;
+}
+ul li{
+     line-height: 1.7em;
+     font-size: 18px;
+}

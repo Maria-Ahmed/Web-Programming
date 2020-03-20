@@ -1,0 +1,75 @@
+h1{
+    font-size: 45px;
+
+}
+
+
+.intro{
+    text-align: center;
+}
+.mail{
+    margin-top: -12px;
+    margin-bottom: 30px;
+    font-size: 30px;
+}
+.email-col{
+     color: blue;
+}
+h2{
+    color: blue;
+}
+.row1{
+    margin-left: 20px;
+}
+.objcol2{
+    padding-left: 9%;
+    font-size: 20px;
+    line-height: 1.7em;
+}
+.uni-col2{
+    padding-left: 6%;
+    font-weight: 800;
+    font-size: 18px;
+}
+.uni-col4{
+    padding-left: 8%;
+    font-weight: 800;
+    font-size: 18px;
+}
+.uni-col1{
+    font-size: 21px;
+}
+.comcol{
+    font-size: 20px;
+    line-height: 1.6em;
+}
+h3{
+    font-size: 23px;
+}
+.aci-col1{
+    padding-left: 5%;
+    margin-top: -17px;
+    line-height: 1.6em;
+    font-size: 18px;
+}
+.aci-col2{
+    padding-left: 7%;
+    margin-top: -16px;
+    margin-bottom: 37px;
+    font-size: 18px;
+}
+.expcol{
+    padding-left: 17%;
+    margin-top: -28px;
+    line-height: 1.7em;
+    font-size: 18px;
+    margin-bottom: 4%;
+}
+.procol2{
+    font-weight: 800;
+    font-size: 20px;
+}
+.colpara{
+    font-size: 17px;
+    line-height: 1.6em;
+}

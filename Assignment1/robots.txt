@@ -1,0 +1,3 @@
+To exclude cv.html robots from entire server
+User-Agent: *
+Disallow:/cv.html
