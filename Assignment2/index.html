@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <title>Acceleration Calculator</title>
+    <script
+  src="https://code.jquery.com/jquery-3.4.1.js"
+  integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
+  crossorigin="anonymous"></script>
+</head>
+<body>
+
+  <form novalidate action= "calculations.php" method= "post"> 
+        <center><h1>Omni-Acceleration Calculator</h1>
+                    <hr>
+        
+        <label for="cars">Choose unit you own information about:</label>
+        <select id="kuchbhi" onchange="something(this.value)" name= "Given:" >
+            <option value="SD">Speed Difference</option>
+            <option value="DT">Distance Traveled</option>
+            <option value="MF">Mass and force</option>
+        </select>
+          <!--Contains The distance field-->
+    <table
+    style="
+      border: 1px solid #000000;
+      border-collapse: collapse;
+      border-spacing: 10px;
+    "
+  >
+    <tr style="border: 3px solid white;">
+      <th>
+        Distance Traveled
+      </th>
+      <th></th>
+      <th></th>
+    </tr>
+    <tr id="IS">
+      <td>
+        Initial Speed
+      </td>
+      <td><input type="number" name="initialSpeed" required /></td>
+      <td>
+        <select name="is_unit">
+          <option value="m/s" selected>m/s</option>
+          <option value="km/h">km/h</option>
+          <option value="ft/s">ft/s</option>
+          <option value="mph">mph</option>
+          <option value="knots">knots</option>
+          <option value="km/s">km/s</option>
+          <option value="mi/s">mi/s</option>
+          <option value="c">c</option>
+        </select>
+      </td>
+    </tr>
+    <tr id="distance">
+      <td>
+        Distance
+      </td>
+      <td><input type="number" name="distance" required /></td>
+      <td>
+        <select name="ds_unit">
+          <option value="mm">mm</option>
+          <option value="cm">cm</option>
+          <option value="m" selected>m</option>
+          <option value="km">km</option>
+          <option value="inches">inches</option>
+          <option value="feet">feet</option>
+          <option value="miles">miles</option>
+          <option value="yard">yard</option>
+        </select>
+      </td>
+    </tr>
+    
+    <tr id="time">
+      <td>
+        Time
+      </td>
+      <td><input type="number" name="time" required /></td>
+      <td>
+        
+          <select name="time_unit">
+            <option value="sec" selected>sec</option>
+            <option value="min">min</option>
+            <option value="day">day</option>
+            <option value="hour">hr</option>
+            <option value="week">week</option>
+            <option value="month">month</option>
+            <option value="year">year</option>
+            <option value="milisec">milisec</option>
+          </select>
+        
+      </td>
+    </tr>
+
+    <tr id="FS">
+      <td>
+        Final Speed
+      </td>
+      <td><input type="number" step="any" name="finalSpeed" required /></td>
+      <td>
+        <select name="fs_unit">
+          <option value="m/s" selected>m/s</option>
+          <option value="km/h">km/h</option>
+          <option value="ft/s">ft/s</option>
+          <option value="mph">mph</option>
+          <option value="knots">knots</option>
+          <option value="km/s">km/s</option>
+          <option value="mi/s">mi/s</option>
+          <option value="c">c</option>
+        </select>
+      </td>
+    </tr>
+
+
+    <tr id="NF">
+      <td>
+        Net Force
+      </td>
+      <td><input type="number" name="netforce" required /></td>
+      <td>
+        <select name="nf_unit">
+          <option value="Newton" selected>Newton</option>
+          <option value="kiloN">kilo N</option>
+          <option value="MegaN">ft/s</option>
+          <option value="GigaN">Giga N</option>
+          <option value="TeraN">Tera N</option>
+          <option value="poundals">poundals</option>
+          <option value="poundsforce">pounds force</option>
+          <option value="dynes">dynes</option>
+        </select>
+      </td>
+    </tr>
+
+    <tr id="mass">
+      <td>
+        Mass
+      </td>
+      <td><input type="number" name="mass" required /></td>
+      <td>
+        <select name="mass_unit">
+          <option value="gram">gram</option>
+          <option value="kg" selected>kg</option>
+          <option value="metrictons">metric tons</option>
+          <option value="grains">grains</option>
+          <option value="drachms">drachms</option>
+          <option value="ounces">ounces</option>
+          <option value="pounds">pounds</option>
+          <option value="stones">stones</option>
+          <option value="USshortstons">US shorts tons</option>
+          <option value="imperialtons">imperial tons</option>
+        </select>
+      </td>
+    </tr>
+
+
+  </table>
+  <hr/>
+ <button class="button" type="submit" name="buttonPRESS">Output!</button>
+</center>
+</form>
+</body>
+
+
+<script>
+
+$(document).ready(function(){
+  //console.log()
+  something($("#kuchbhi").val())
+ })
+
+  function something(selectedObject){
+        
+    if(selectedObject == 'SD'){
+      $("#IS").show()
+      $("#FS").show();
+      $("#time").show();
+      $("#acceleration").show();
+      $("#distance").hide();
+      $("#mass").hide();
+      $("#NF").hide();
+    }else if(selectedObject=='DT'){
+      $("#IS").show();
+      $("#FS").hide();
+      $("#time").show();
+      $("#acceleration").show();
+      $("#distance").show();
+      $("#mass").hide();
+      $("#NF").hide();
+    }else{
+      $("#IS").hide();
+      $("#FS").hide();
+      $("#time").hide();
+      $("#acceleration").hide();
+      $("#distance").hide();
+      $("#mass").show();
+      $("#NF").show()
+    }
+  }
+
+
+</script>
+
+</html>
